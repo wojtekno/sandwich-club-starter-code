@@ -35,7 +35,7 @@ public class JsonUtils {
             description = sandwichJSONObj.getString("description");
             image = sandwichJSONObj.getString("image");
             JSONArray ingredientsJSONArray = sandwichJSONObj.getJSONArray("ingredients");
-            for (int i = 0; i < alsoKnownAsJSONArray.length(); i++) {
+            for (int i = 0; i < ingredientsJSONArray.length(); i++) {
                 ingredients.add(ingredientsJSONArray.getString(i));
             }
         } catch (JSONException e) {
